@@ -81,3 +81,8 @@ body {
     border-bottom: 0;
   }
 }
+
+.angucomplete-dropdown {
+    overflow-y: auto;
+    max-height: 200px;
+}

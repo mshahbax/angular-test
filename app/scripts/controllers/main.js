@@ -19,23 +19,25 @@ angular.module('mytodoApp')
             };
 
             //Endpoint testing
-            var obj = {};
-            fetch(obj);
-            function fetch(postData) {
-
-                var method = 'POST';
-                var url = "http://kidlr.lotiv.com/api/user/register";
-                var deferred = $q.defer();
-                // var headers = {'auth-token': '{sPjZze9s@4hyBAieLdWJFz2juAdgnnRhsTVC>Wih))J9WT(kr','Content-Type': undefined};
-                $http({method: method, data: {email : 's@s.com', password : ''}, url: url, headers: {'Content-Type': 'application/x-www-form-urlencoded'}}).
-                        then(function (data) {
-                            deferred.resolve(data);
-                        }, function (error) {
-                            deferred.reject(error);
-                        });
-                return deferred.promise;
-
-            }
-            ;
+//            var obj = {};
+//            fetch(obj);
+//            function fetch(postData) {
+//
+//                var method = 'POST';
+//                var url = "http://kidlr.lotiv.com/api/user/register";
+//                var deferred = $q.defer();
+//                // var headers = {'auth-token': '{sPjZze9s@4hyBAieLdWJFz2juAdgnnRhsTVC>Wih))J9WT(kr','Content-Type': undefined};
+//                $http({method: method, data: {email : 's@s.com', password : ''}, url: url, headers: {'Content-Type': 'application/x-www-form-urlencoded'}}).
+//                        then(function (data) {
+//                            deferred.resolve(data);
+//                        }, function (error) {
+//                            deferred.reject(error);
+//                        });
+//                return deferred.promise;
+//
+//            }
+            
+            
+            
         });
         

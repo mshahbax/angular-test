@@ -15,7 +15,8 @@ var todoApp = angular.module('mytodoApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.sortable'
+    'ui.sortable',
+    'angucomplete-alt'
 ]);
 
 todoApp.config(function ($routeProvider) {

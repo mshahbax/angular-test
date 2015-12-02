@@ -1,25 +1,49 @@
 <div class="container">
-    <h2>My Todos</h2>
 
-    <!-- Todos input -->
-    <form role="form" ng-submit="addTodo()">
-        <div class="row">
-            <div class="input-group">
-                <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-                <span class="input-group-btn">
-                    <input type="submit" class="btn btn-primary" value="Add">
-                </span>
-            </div>
-        </div>
-    </form>
 
-    <!-- Todos list -->
-    <div ui-sortable ng-model="todos">
-        <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
-            <input type="text" ng-model="todo" class="form-control">
-            <span class="input-group-btn">
-                <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-            </span>
-        </p>
+    <!-- https://ghiden.github.io/angucomplete-alt/#example5 -->
+    <!--attach ?q with remote-url-->
+    <div style=" width: 90%">
+        <div angucomplete-alt
+             id="ex5"
+             placeholder="Search projects"
+             pause="400"
+             selected-object="selectedProject"
+             remote-url="https://api.github.com/search/repositories?q="
+             remote-url-request-formatter="remoteUrlRequestFn"
+             remote-url-data-field="items"
+             title-field="name"
+             description-field="full_name"
+             minlength="2"
+             image-field="avatar_url"
+             input-class="form-control form-control-small"
     </div>
+</div>
+
+
+
+
+<h2>My Todos</h2>
+
+<!-- Todos input -->
+<form role="form" ng-submit="addTodo()">
+    <div class="row">
+        <div class="input-group">
+            <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
+            <span class="input-group-btn">
+                <input type="submit" class="btn btn-primary" value="Add">
+            </span>
+        </div>
+    </div>
+</form>
+
+<!-- Todos list -->
+<div ui-sortable ng-model="todos">
+    <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+        <input type="text" ng-model="todo" class="form-control">
+        <span class="input-group-btn">
+            <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+        </span>
+    </p>
+</div>
 </div>
