@@ -86,3 +86,57 @@ body {
     overflow-y: auto;
     max-height: 200px;
 }
+
+.pdf-viewer-container{
+    
+}
+.pdf-viewer-container .bg-blue{
+    background: #444;
+    opacity: 1;
+    color: #fff;
+}
+
+
+.pdf-viewer-container .field-dark {
+    color: #fff;
+    background-color: rgba(0,0,0,.25);
+    border: 1px solid rgba(0,0,0,.0625);
+    border-radius: 3px;
+}
+.pdf-viewer-container .button-nav-dark:hover {
+    background-color: rgba(0,0,0,.125);
+}
+.pdf-viewer-container .button:hover {
+    text-decoration: none;
+}
+
+.pdf-viewer-container .button-nav-dark {
+    color: #fff;
+}
+.pdf-viewer-container .py2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pdf-viewer-container .m0 {
+    margin: 0;
+}
+
+.pdf-viewer-container .button, button {
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.125;
+    padding: .5em 1rem;
+    margin: 0;
+    height: auto;
+    border: 1px solid transparent;
+    -webkit-appearance: none;
+}
+.pdf-viewer-container .px1 {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}

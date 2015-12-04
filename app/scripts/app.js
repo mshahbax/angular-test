@@ -16,7 +16,8 @@ var todoApp = angular.module('mytodoApp', [
     'ngSanitize',
     'ngTouch',
     'ui.sortable',
-    'angucomplete-alt'
+    'angucomplete-alt',
+    'pdf'
 ]);
 
 todoApp.config(function ($routeProvider) {
@@ -30,6 +31,11 @@ todoApp.config(function ($routeProvider) {
                 templateUrl: 'views/about.html',
                 controller: 'AboutCtrl',
                 controllerAs: 'about'
+            })
+            .when('/pdfview', {
+              templateUrl: 'views/pdfview.html',
+              controller: 'PdfviewCtrl',
+              controllerAs: 'pdfview'
             })
             .otherwise({
                 redirectTo: '/'
