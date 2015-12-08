@@ -9,6 +9,7 @@
  */
 angular.module('mytodoApp')
         .controller('MainCtrl', function ($scope) {
+            console.log(sha256('12345')); // converting string to sha256
             $scope.todos = ['Item 1', 'Item 2', 'Item 3'];
             $scope.addTodo = function () {
                 $scope.todos.push($scope.todo);
@@ -17,7 +18,7 @@ angular.module('mytodoApp')
             $scope.removeTodo = function (index) {
                 $scope.todos.splice(index, 1);
             };
-
+            
             //Endpoint testing
 //            var obj = {};
 //            fetch(obj);
