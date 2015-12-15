@@ -17,7 +17,8 @@ var todoApp = angular.module('mytodoApp', [
     'ngTouch',
     'ui.sortable',
     'angucomplete-alt',
-    'pdf'
+    'pdf',
+    'ui.bootstrap'
 ]);
 
 todoApp.config(function ($routeProvider) {
