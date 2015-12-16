@@ -36,11 +36,15 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-	"postinstall": "./node_modules/bower/bin/bower install;",
     "test": "grunt test"
   },
   "dependencies": {
+    "bower": "^1.7.1",
     "express": "^4.13.3",
-    "gzippo": "^0.2.0"
+    "generator-angular": "^0.15.1",
+    "generator-karma": "^1.0.1",
+    "grunt-cli": "^0.1.13",
+    "gzippo": "^0.2.0",
+    "yo": "^1.5.0"
   }
 }
