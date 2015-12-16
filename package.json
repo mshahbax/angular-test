@@ -36,8 +36,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test",
-	"postinstall": "npm install; ./node_modules/bower/bin/bower install"
+	"postinstall": "./node_modules/bower/bin/bower install;",
+    "test": "grunt test"
   },
   "dependencies": {
     "express": "^4.13.3",
