@@ -9,7 +9,7 @@
  */
 angular.module('mytodoApp')
         .controller('MainCtrl', function ($scope, $http,$q) {
-            console.log(sha256('12345')); // converting string to sha256
+            //console.log(sha256('12345')); // converting string to sha256
             $scope.todos = ['Item 1', 'Item 2', 'Item 3'];
             $scope.addTodo = function () {
                 $scope.todos.push($scope.todo);
@@ -18,14 +18,11 @@ angular.module('mytodoApp')
             $scope.removeTodo = function (index) {
                 $scope.todos.splice(index, 1);
             };
-            
-            //Endpoint testing
-            var obj = {};
-            fetch(obj);
-            function fetch(postData) {
+                      
+            function fetch() {
 
                 var method = 'POST';
-                var url = "http://kidlr.lotiv.com/api/user/register";
+                var url = 'http://kidlr.lotiv.com/api/user/register';
                 var deferred = $q.defer();
                 // var headers = {'auth-token': '{sPjZze9s@4hyBAieLdWJFz2juAdgnnRhsTVC>Wih))J9WT(kr','Content-Type': undefined};
                 $http({method: method, data: {email : 's@s.com', password : ''}, url: url, headers: {'Content-Type': 'application/x-www-form-urlencoded'}}).
@@ -37,6 +34,8 @@ angular.module('mytodoApp')
                 return deferred.promise;
 
             }
+			//Endpoint testing
+			fetch();
             
             
             
@@ -69,7 +68,7 @@ angular.module('mytodoApp')
   $scope.toggleMin();
   $scope.maxDate = new Date(2020, 5, 22);
 
-  $scope.open = function($event) {
+  $scope.open = function() { //$event
     $scope.status.opened = true;
   };
 

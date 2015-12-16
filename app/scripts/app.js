@@ -44,7 +44,7 @@ todoApp.config(function ($routeProvider) {
 });
 
 
-todoApp.config(function ($httpProvider) {
+/*todoApp.config(function ($httpProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
     $httpProvider.defaults.transformRequest = function (data) {
         if (data === undefined) {
@@ -53,5 +53,5 @@ todoApp.config(function ($httpProvider) {
         return $.param(data);
 
     };
-});
+});*/
 
