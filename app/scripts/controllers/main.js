@@ -9,6 +9,11 @@
  */
 angular.module('mytodoApp')
         .controller('MainCtrl', function ($scope, $http,$q) {
+            this.awesomeThings = [
+                'HTML5 Boilerplate',
+                'AngularJS',
+                'Karma'
+              ];
             //console.log(sha256('12345')); // converting string to sha256
             $scope.todos = ['Item 1', 'Item 2', 'Item 3'];
             $scope.addTodo = function () {

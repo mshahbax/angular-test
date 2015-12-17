@@ -9,5 +9,10 @@
  */
 angular.module('mytodoApp')
   .controller('PdfviewCtrl', function ($scope) {
+      this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
     $scope.pdfUrl = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/149125/material-design-2.pdf';
   });
